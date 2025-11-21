@@ -211,6 +211,7 @@ async function createWidget() {
 
     const title = titleStack.addText("Recents");
     title.font = Font.semiboldRoundedSystemFont(16);
+    title.textColor = Color.white();
     titleStack.addSpacer();
 
     containerStack.addSpacer(12);
@@ -243,6 +244,7 @@ async function createWidget() {
 
         const ratingText = ratingStack.addText((film.rating == -1) ? " " : formatRating(film.rating));
         ratingText.font = Font.mediumSystemFont(10);
+        ratingText.textColor = new Color("#ffffffcc")
 
         ratingStack.addSpacer();
         posterStack.addSpacer();
